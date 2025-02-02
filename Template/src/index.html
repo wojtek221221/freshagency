@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./tailwind/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+</head>
+<body class="w-full h-full bg-background font-inter">
+
+<!-- SEO -->
+<head>
+    <!-- Tytuł strony -->
+    <title>FreshAgency.pl</title>
+  
+    <!-- Meta tagi SEO -->
+    <meta name="description" content="Jestem osobą pełną pasji, ceniącą rozwój i kreatywność. Na co dzień zajmuję się różnorodnymi projektami, a w wolnym czasie oddaję się swoim ulubionym hobby. Uwielbiam poznawać nowe rzeczy, podejmować wyzwania i ciągle poszerzać swoje horyzonty.">
+    <meta name="keywords" content="projekty, kreatywność, rozwój, hobby, Kovid19, Kubovid19.pl">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="canonical" href="https://freshagency.pl">
+  
+    <link rel="icon" type="image/png" href="./assets/logo.png">
+  
+    <meta property="og:title" content="Kubovid19.pl.pl">
+    <meta property="og:description" content="Jestem osobą pełną pasji, ceniącą rozwój i kreatywność. Na co dzień zajmuję się różnorodnymi projektami, a w wolnym czasie oddaję się swoim ulubionym hobby. Uwielbiam poznawać nowe rzeczy, podejmować wyzwania i ciągle poszerzać swoje horyzonty.">
+    <meta property="og:image" content="https://kubovid19.pl/assets/img1.png">
+    <meta property="og:url" content="https://kubovid19.pl">
+    <meta property="og:type" content="website">
+  
+    <meta name="twitter:title" content="Kubovid19.pl">
+    <meta name="twitter:description" content="Sprawdź moją stronę Kubovid19.pl, gdzie znajdziesz moje projekty, rozwój i hobby.">
+    <meta name="twitter:image" content="https://kubovid19.pl/assets/img1.png">
+</head>
+
+<!-- navbar -->
+<nav id="nav" data-aos="fade-down" class="fixed top-0 inset-x-0 max-w-[1600px] mx-auto bg-transparent mt-5 flex items-center justify-between p-4 z-50 transition-colors duration-300">
+    <div class="flex items-center">
+        <a href="#"><img src="./assets/logo.png" alt="Logo" class="w-[80px] mr-4 duration-300 hover:scale-[103%]" draggable="false"></a>
+        <!-- trojkat -->
+        <div id="icon" class="flex">
+            <img id="icon" class="absolute top-[-20px] left-[220px]" src="./assets/icons/polygon.png" draggable="false">
+            <div class="absolute top-[-20px] left-[220px] blur-[25px] bg-lights w-[10px] h-[10px] rounded-[100%] z-0"></div>
+        </div>
+        <div class="hidden md:flex space-x-[32px] ml-[64px] z-10">
+            <a href="#" class="text-[#957BFF]">Strona główna</a>
+            <a href="#Realizacje" class="text-white hover:text-gray-300">Realizacje</a>
+            <a href="#" class="text-white hover:text-gray-300">Template</a>
+            <a href="#Opinie" class="text-white hover:text-gray-300">Opinie</a>
+            <a href="#" class="text-white hover:text-gray-300">Kontakt</a>
+        </div>
+    </div>
+
+    <div class="flex items-center space-x-4 z-10">
+        <button class="md:hidden p-4 text-white focus:outline-none" id="menu-toggle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+
+        <div class="hidden md:flex space-x-[32px]">
+            <a href="#">
+                <img src="./assets/icons/socialmedia/discord.png" draggable="false" alt="discord" class="duration-300 hover:scale-105 mt-[3px]">
+            </a>
+            <a href="#">
+                <img src="./assets/icons/socialmedia/youtube.png" draggable="false" alt="youtube" class="duration-300 hover:scale-105">
+            </a>
+            <a href="#">
+                <img src="./assets/icons/socialmedia/instagram.png" draggable="false" alt="instagram" class="duration-300 hover:scale-105">
+            </a>
+            <a href="#">
+                <img src="./assets/icons/socialmedia/facebook.png" draggable="false" alt="facebook" class="duration-300 hover:scale-105">
+            </a>
+            <a href="#">
+                <img src="./assets/icons/socialmedia/be.png" draggable="false" alt="behance" class="duration-300 hover:scale-105">
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- mobile menu -->
+<div class="md:hidden z-10 mt-[120px]" id="mobile-menu" style="display: none;">
+    <div class="flex flex-col space-y-[32px] pt-2 ml-4">
+        <a href="#" class="text-white hover:text-gray-300">Strona główna</a>
+        <a href="#" class="text-white hover:text-gray-300">Realizacje</a>
+        <a href="#" class="text-white hover:text-gray-300">Template</a>
+        <a href="#" class="text-white hover:text-gray-300">Opinie</a>
+        <a href="#" class="text-white hover:text-gray-300">Kontakt</a>
+
+        <!-- social media -->
+        <div class="flex space-x-[32px] pt-4">
+            <a href="#">
+                <img src="./assets/icons/socialmedia/discord.png" draggable="false" alt="behance" class="duration-300 hover:scale-105">
+            </a>
+            <a href="#">
+                <img src="./assets/icons/socialmedia/youtube.png" draggable="false" alt="youtube" class="duration-300 hover:scale-105">
+            </a>
+            <a href="#">
+                <img src="./assets/icons/socialmedia/instagram.png" draggable="false" alt="instagram" class="duration-300 hover:scale-105">
+            </a>
+            <a href="#">
+                <img src="./assets/icons/socialmedia/facebook.png" draggable="false" alt="facebook" class="duration-300 hover:scale-105">
+            </a>
+            <a href="#">
+                <img src="./assets/icons/socialmedia/be.png" draggable="false" alt="behance" class="duration-300 hover:scale-105">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="progress-bar" class="fixed top-0 left-0 h-[1px] bg-gradient-to-r from-[#FA9C9C] to-[#957BFF]"></div>
+<!-- lights -->
+<div class="absolute animate-scale-up top-0 right-[50px] blur-[250px] bg-lights w-[250px] h-[250px] rounded-[100%] z-0"></div>
+<div class="absolute animate-scale-up top-[800px] left-0 blur-[400px] bg-lights w-[350px] h-[350px] rounded-[100%] z-0 hidden md:flex"></div>
+<div class="absolute top-[2000px] right-[50px] blur-[250px] bg-lights w-[250px] h-[250px] rounded-[100%] z-0"></div>
+
+<!-- container 1 -->
+<div class="relative z-20">
+    <!-- pattern -->
+    <img class="absolute top-1/2 left-1/2 opacity-10 z-0 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex" src="./assets/pattern.png" draggable="false">
+    <!-- hero -->
+    <div data-aos="fade-up" class="relative flex items-center justify-center min-h-screen">
+        <div class="block text-center h-auto z-[20]">
+            <h1 class="text-[30px] md:text-[96px] font-semibold bg-radial-gradient from-[#FA9C9C] via-[#957BFF] to-white to-50% bg-clip-text text-transparent">
+                Template
+            </h1>                             
+            <p class="text-description1 w-full max-w-[450px] mx-auto text-[14px] md:text-[16px] font-medium text-center mt-[32px]">
+                Chciałbyś się wyrózniać ale nie masz dużo pieniędzy? Tutaj wybierzesz coś dla siebie!
+            </p>
+            <div class="flex justify-center gap-[32px] mt-[64px]">
+                <a href="#"><button class="text-white bg-gradient-to-r from-[#957BFF] to-[#594A99] pt-3 pr-8 pb-3 pl-8 rounded-[100px] duration-300 hover:scale-[101%]">
+                    Powrót
+                </button></a>
+            </div>
+            <!-- scroll -->
+            <a href="#projekty">
+                <button class="mt-[40px] duration-300 hover:scale-[103%]">
+                    <img src="./assets/icons/arrow-down.png" draggable="false">
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div data-aos="fade-up" id="projekty" class="relative top-[-180px] md:flex justify-center gap-[32px] mt-[64px] pt-5 z-50">
+    <button class="text-white bg-gradient-to-r from-[#957BFF] to-[#594A99] pt-3 pr-8 pb-3 pl-8 rounded-[100px] duration-300 hover:scale-[101%]">
+        Wszystko
+    </button>
+    <button class="text-white border-2 border-[#594A99] bg-transparent pt-3 pr-8 pb-3 pl-8 rounded-[100px] duration-300 hover:scale-[101%]">
+        Grafiki
+    </button>
+    <button class="text-white border-2 border-[#594A99] bg-transparent pt-3 pr-8 pb-3 pl-8 rounded-[100px] duration-300 hover:scale-[101%]">
+        Strony Internetowe
+    </button>
+</div>
+
+
+<!-- realizacje -->
+<div id="Realizacje" class="relative top-[-200px] flex justify-center z-30">
+    <div class="max-w-[1650px] w-full pt-[64px] pb-[64px] pl-[32px] pr-[32px] rounded-[50px] opacity-[75%] z-40 m-5 text-center backdrop-blur-[12,5px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+            <div data-aos="fade-up" class="flex flex-col items-center">
+
+                <div class="mb-8 relative group w-[413px] h-[450px] md:w-[513px] md:h-[510px] overflow-hidden bg-background2 rounded-[50px] text-left text-white duration-300 hover:scale-[101%]">
+                    <img src="./assets/images/template/template1.png" draggable="false" class="mb-[31px]">
+                    <span class="pl-[36px] text-[20px] font-bold mt-[-15px]">
+                        Template Lobby Banners
+                    </span>
+                    <p class="pl-[24px] ml-3 mr-[24px] mt-2">
+                        After purchasing "Template Lobby Banners," you will receive a PSD file to modify the text for up to
+                    </p>
+                    <a href=""><button class="relative top-[32px] md:top-[60px] w-full max-w-[350px] md:min-w-[450px] bg-gradient-to-r from-[#957BFF] to-[#594A99] ml-[36px] mr-[36px] pt-3 pb-3 pl-8 pr-8 rounded-[25px] md:mt-0 font-bold text-[20px]">
+                        20zł
+                    </button></a>
+                </div>
+                <div class="relative group w-[413px] h-[450px] md:w-[513px] md:h-[510px] overflow-hidden bg-background2 rounded-[50px] text-left text-white duration-300 hover:scale-[101%]">
+                    <img src="./assets/images/template/template1.png" draggable="false" class="mb-[31px]">
+                    <span class="pl-[36px] text-[20px] font-bold mt-[-15px]">
+                        Template Lobby Banners
+                    </span>
+                    <p class="pl-[24px] ml-3 mr-[24px] mt-2">
+                        After purchasing "Template Lobby Banners," you will receive a PSD file to modify the text for up to
+                    </p>
+                    <a href=""><button class="relative top-[32px] md:top-[60px] w-full max-w-[350px] md:min-w-[450px] bg-gradient-to-r from-[#957BFF] to-[#594A99] ml-[36px] mr-[36px] pt-3 pb-3 pl-8 pr-8 rounded-[25px] md:mt-0 font-bold text-[20px]">
+                        20zł
+                    </button></a>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="flex flex-col items-center mr-5 ml-5">
+                <div class="mb-8 relative group w-[413px] h-[450px] md:w-[513px] md:h-[510px] overflow-hidden bg-background2 rounded-[50px] text-left text-white duration-300 hover:scale-[101%]">
+                    <img src="./assets/images/template/template1.png" draggable="false" class="mb-[31px]">
+                    <span class="pl-[36px] text-[20px] font-bold mt-[-15px]">
+                        Template Lobby Banners
+                    </span>
+                    <p class="pl-[24px] ml-3 mr-[24px] mt-2">
+                        After purchasing "Template Lobby Banners," you will receive a PSD file to modify the text for up to
+                    </p>
+                    <a href=""><button class="relative top-[32px] md:top-[60px] w-full max-w-[350px] md:min-w-[450px] bg-gradient-to-r from-[#957BFF] to-[#594A99] ml-[36px] mr-[36px] pt-3 pb-3 pl-8 pr-8 rounded-[25px] md:mt-0 font-bold text-[20px]">
+                        20zł
+                    </button></a>
+                </div>
+                <div class=" relative group w-[413px] h-[450px] md:w-[513px] md:h-[510px] overflow-hidden bg-background2 rounded-[50px] text-left text-white duration-300 hover:scale-[101%]">
+                    <img src="./assets/images/template/template1.png" draggable="false" class="mb-[31px]">
+                    <span class="pl-[36px] text-[20px] font-bold mt-[-15px]">
+                        Template Lobby Banners
+                    </span>
+                    <p class="pl-[24px] ml-3 mr-[24px] mt-2">
+                        After purchasing "Template Lobby Banners," you will receive a PSD file to modify the text for up to
+                    </p>
+                    <a href=""><button class="relative top-[32px] md:top-[60px] w-full max-w-[350px] md:min-w-[450px] bg-gradient-to-r from-[#957BFF] to-[#594A99] ml-[36px] mr-[36px] pt-3 pb-3 pl-8 pr-8 rounded-[25px] md:mt-0 font-bold text-[20px]">
+                        20zł
+                    </button></a>
+                </div>
+            </div>
+            <div data-aos="fade-up" class="flex flex-col items-center">
+                <div class="mb-8 relative group w-[413px] h-[450px] md:w-[513px] md:h-[510px] overflow-hidden bg-background2 rounded-[50px] text-left text-white duration-300 hover:scale-[101%]">
+                    <img src="./assets/images/template/template1.png" draggable="false" class="mb-[31px]">
+                    <span class="pl-[36px] text-[20px] font-bold mt-[-15px]">
+                        Template Lobby Banners
+                    </span>
+                    <p class="pl-[24px] ml-3 mr-[24px] mt-2">
+                        After purchasing "Template Lobby Banners," you will receive a PSD file to modify the text for up to
+                    </p>
+                    <a href=""><button class="relative top-[32px] md:top-[60px] w-full max-w-[350px] md:min-w-[450px] bg-gradient-to-r from-[#957BFF] to-[#594A99] ml-[36px] mr-[36px] pt-3 pb-3 pl-8 pr-8 rounded-[25px] md:mt-0 font-bold text-[20px]">
+                        20zł
+                    </button></a>
+                </div>
+                <div class=" relative group w-[413px] h-[450px] md:w-[513px] md:h-[510px] overflow-hidden bg-background2 rounded-[50px] text-left text-white duration-300 hover:scale-[101%]">
+                    <img src="./assets/images/template/template1.png" draggable="false" class="mb-[31px]">
+                    <span class="pl-[36px] text-[20px] font-bold mt-[-15px]">
+                        Template Lobby Banners
+                    </span>
+                    <p class="pl-[24px] ml-3 mr-[24px] mt-2">
+                        After purchasing "Template Lobby Banners," you will receive a PSD file to modify the text for up to
+                    </p>
+                    <a href=""><button class="relative top-[32px] md:top-[60px] w-full max-w-[350px] md:min-w-[450px] bg-gradient-to-r from-[#957BFF] to-[#594A99] ml-[36px] mr-[36px] pt-3 pb-3 pl-8 pr-8 rounded-[25px] md:mt-0 font-bold text-[20px]">
+                        20zł
+                    </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- footer -->
+<footer class="relative w-full text-center h-auto max-h-[150px] bg-background2 z-20 text-white top-[100px]">
+    <h1 class="pt-[32px] pb-[32px]">© FreshAgency.pl 2024 | Wszelkie prawa zastrzeżone. </h1>
+    <div class="flex gap-[32px] justify-center pb-[32px]">
+        <a href="#">
+            <img src="./assets/icons/socialmedia/discord.png" draggable="false" alt="discord" class="duration-300 hover:scale-105 mt-[3px]">
+        </a>
+        <a href="#">
+            <img class="flex justify-center duration-300 hover:scale-105 cursor-pointer" src="./assets/icons/socialmedia/youtube.png" draggable="false">
+        </a>
+        <a href="#">
+            <img class="flex justify-center duration-300 hover:scale-105 cursor-pointer" src="./assets/icons/socialmedia/instagram.png" draggable="false">
+        </a>
+        <a href="#">
+            <img class="flex justify-center duration-300 hover:scale-105 cursor-pointer" src="./assets/icons/socialmedia/facebook.png" draggable="false">
+        </a>
+        <a href="#">
+            <img class="flex justify-center duration-300 hover:scale-105 cursor-pointer" src="./assets/icons/socialmedia/be.png" draggable="false">
+        </a>
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="./script/script.js"></script>
+<script src="./script/navbar.js"></script>
+<script src="./script/scroll.js"></script>
+<!-- scroll animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
